@@ -1,4 +1,4 @@
-https://github.com/IvsKevin/4B.git
+https://github.com/IvsKevin/4B/tree/main/tercer_avance
 
 Puntos obtenidos: 34
 - Leyva Davila Jesus Efrain: 8
