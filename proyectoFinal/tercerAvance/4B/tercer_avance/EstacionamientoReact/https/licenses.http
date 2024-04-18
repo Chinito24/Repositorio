@@ -1,0 +1,29 @@
+@api = http://localhost:3000/licenses
+
+GET {{api}}
+
+###
+GET  {{api}}/2
+
+###
+POST  {{api}}
+
+Content-Type: application/json
+{
+    "license_name": "License 4",
+    "license_description":"Cuarta descripción",
+    "fk_status": 1
+}
+
+###
+DELETE {{api}}/4
+
+###
+PUT {{api}}/2
+
+Content-Type: application/json
+{
+    "license_name": "Nueva Licencia 2",
+    "license_description": "Descripción actualizada",
+    "fk_status": 2
+}

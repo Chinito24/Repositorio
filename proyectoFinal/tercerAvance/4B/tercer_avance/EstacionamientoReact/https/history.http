@@ -1,0 +1,42 @@
+@api = http://localhost:3000/history
+
+### Obtener todo el historial
+GET {{api}}
+
+###
+### Obtener un registro de historial por su ID
+GET {{api}}/1
+
+###
+### Obtener el conteo total de registros de historial
+GET {{api}}/count
+
+###
+### Agregar un nuevo registro de historial
+POST {{api}}
+Content-Type: application/json
+{
+    "date_in": "2024-04-06 09:00:00",
+    "date_out": "2024-04-06 18:00:00",
+    "fk_parking": 1,
+    "fk_card": 1,
+    "fk_space": 1,
+    "fk_status": 1
+}
+
+###
+### Eliminar un registro de historial por su ID
+DELETE {{api}}/2
+
+###
+### Actualizar la información de un registro de historial existente
+PUT {{api}}/2
+Content-Type: application/json
+{
+    "date_in": "2024-04-06 10:00:00",
+    "date_out": "2024-04-06 19:00:00",
+    "fk_parking": 2,
+    "fk_card": 2,
+    "fk_space": 2,
+    "fk_status": 2
+}
